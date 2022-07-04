@@ -38,7 +38,17 @@ Debe contar la cantidad de notas válidas y la cantidad de ausentes
 
 print("Mi organizador académico (#_#)")
 # Empezar aquí la resolución del ejercicio
-
+for i in (notas):
+    if i >= 90:
+        print("Calificacion: A")
+    elif i >= 80:
+        print("Calificacion: B")
+    elif i >= 70:
+        print("Calificacion: C")
+    elif i >= 60:
+        print("Calificacion: D")
+    elif i < 60 and i > 0:
+        print("Calificacion: F")    
 # Para calcular el promedio primero debe obtener la suma
 # de todas las notas, que irá almacenando en esta variable
 sumatoria = 0           # Ya le hemos inicializado en 0
@@ -48,11 +58,28 @@ cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
 
 # Realice aquí el bucle para recorrer todas las notas
 # y cacular la sumatoria
+for x in (notas):
+    if x > 0:
+        sumatoria += x
+        cantidad_notas += 1
+    else:
+        cantidad_ausentes += 1
+
 
 # Terminado el bucle calcule el promedio como
 # promedio = sumatoria / cantidad_notas
-
+promedio = sumatoria / cantidad_notas
 # Utilice la nota promedio calculada y transformela
 # a calificación con letras, imprima en pantalla el resultado
-
+if promedio >= 90:
+        print("Nota promedio: A")
+elif promedio >= 80:
+        print("Nota promedio: B")
+elif promedio >= 70:
+        print("Nota promedio: C")
+elif promedio >= 60:
+        print("Nota promedio: D")
+elif promedio < 60:
+        print("Nota promedio: F")
 # Imprima en pantalla al cantidad de ausentes
+print("La cantidad de ausentes es:", cantidad_ausentes)
