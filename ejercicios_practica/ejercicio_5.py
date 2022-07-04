@@ -12,7 +12,7 @@
 # Pedir por consola dos números que representen el principio y fin de una
 # secuencia numérica.
 # Realizar un bucle "for" que recorra esa secuencia armada con "range"
-# y calcule a sumatoria total de todos los números dentro de esa secuencia
+# y calcule la sumatoria total de todos los números dentro de esa secuencia
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
@@ -21,7 +21,9 @@ fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
 
 # for ... in range(....)
+for i in range(inicio,fin + 1):
+    sumatoria += i
 
 # Imprimir el valor de la sumatoria
-
+print("La suma de la secuencia es:", sumatoria)
 print("terminamos!")

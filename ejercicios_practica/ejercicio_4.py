@@ -16,11 +16,18 @@ x = 0
 # una condición compuesta (utilice el operador "and" o "or" según corresponda)
 # En cada iteracion del bucle debe incrementar el valor de "x" en "2"
 # e imprimir en pantalla el resultado de X (antes de incrementar) con print
-
+while x < 10 and x != 6:
+    print("valor de x:", x)
+    x += 2
+print ('FIN')    
 # Realice el mismo bucle "while" pero en vez de estar formado por una condición
 # compuesta, que el "while" siga iterando mientras <x sea menos a 10>, y dentro del
 # "while" consultar si <x es igual a 6>, y en ese caso realizar una interrupción del bucle
 # En cada iteracion del bucle debe incrementar el valor de "x" en "2"
 # e imprimir en pantalla el resultado de X (antes de incrementar) con print
-
+while x < 10:
+    if x == 6:
+        break
+    print("valor de x:", x)
+    x += 2
 print("terminamos!")
